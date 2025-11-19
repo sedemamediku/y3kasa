@@ -1,0 +1,78 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 1) Full-screen blur -->
+    <eightbitlab.com.blurview.BlurView
+        android:id="@+id/blurView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!-- 2) Center card -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@android:color/white">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Contact name -->
+            <TextView
+                android:id="@+id/tvCallName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Call: Kofi?"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:paddingBottom="12dp"/>
+
+            <!-- Phone number -->
+            <TextView
+                android:id="@+id/tvPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+233 20 123 4567"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:paddingBottom="24dp"/>
+
+            <!-- Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end">
+
+                <!-- Daabi (cancel) -->
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCancel"
+                    style="?attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daabi"
+                    android:textColor="@android:color/black"
+                    android:backgroundTint="@android:color/transparent"/>
+
+                <!-- Aane (confirm) -->
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnConfirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Aane"
+                    android:backgroundTint="@android:color/black"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

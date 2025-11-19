@@ -1,0 +1,141 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Row for Record and Play buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <!-- Orange background, BLACK text -->
+            <Button
+                android:id="@+id/recordButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Start Recording"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:background="@drawable/rounded_orange_button"
+                android:padding="12dp"
+                android:layout_marginEnd="8dp"/>
+
+            <!-- White background, BLACK text -->
+            <Button
+                android:id="@+id/playButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Play Audio"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:background="@drawable/rounded_white_button"
+                android:padding="12dp"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- Row for Transcribe and Perform Action buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <!-- Orange background, BLACK text -->
+            <Button
+                android:id="@+id/transcribeButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Transcribe Audio"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:background="@drawable/rounded_orange_button"
+                android:padding="12dp"
+                android:layout_marginEnd="8dp"/>
+
+            <!-- White background, BLACK text -->
+            <Button
+                android:id="@+id/performActionButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Perform Action"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:background="@drawable/rounded_white_button"
+                android:padding="12dp"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- Transcription TextView stays white -->
+        <TextView
+            android:id="@+id/transcriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transcription will appear here..."
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:gravity="center" />
+
+        <!-- Translation TextView you can switch to white too -->
+        <TextView
+            android:id="@+id/translationTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Translation will appear here..."
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:gravity="center" />
+
+        <!-- Manual Command EditText (transparent bg, white text) -->
+        <EditText
+            android:id="@+id/manualCommandEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter command..."
+            android:textColor="#FFFFFF"
+            android:textColorHint="#888888"
+            android:background="@android:color/transparent"
+            android:padding="12dp"
+            android:layout_marginTop="20dp" />
+
+        <!-- Manual Action button: Orange bg, BLACK text -->
+        <Button
+            android:id="@+id/processManualCommandButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perform Manual Action"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:background="@drawable/rounded_orange_button"
+            android:padding="12dp"
+            android:layout_marginTop="20dp" />
+
+        <!-- Open Mascot (white bg by default, force black text) -->
+        <Button
+            android:id="@+id/openMascotBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open Mascot Screen"
+            android:textColor="#000000"
+            android:background="@drawable/rounded_white_button"
+            android:padding="12dp"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</ScrollView>
