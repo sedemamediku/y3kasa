@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Backup rules file to exclude sensitive data from Android backups.
+   See https://developer.android.com/guide/topics/data/autobackup
+   for details.
+   Note: This file is ignored for devices older that API 31
+   See https://developer.android.com/about/versions/12/backup-restore
+-->
+<full-backup-content>
+    <!-- Exclude cache directory (contains temporary files, audio recordings, etc.) -->
+    <exclude domain="file" path="cache/"/>
+    
+    <!-- Exclude external storage files (audio recordings) -->
+    <exclude domain="external" path="."/>
+    
+    <!-- Exclude any files containing sensitive data -->
+    <exclude domain="file" path="no_backup/"/>
+</full-backup-content>
