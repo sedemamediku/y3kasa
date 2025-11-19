@@ -1,0 +1,38 @@
+[versions]
+agp = "8.7.3"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+mockito = "3.12.4"
+robolectric = "4.11.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+okhttp = "4.10.0"
+porcupine = "3.0.1"
+glide = "4.16.0"
+core = "1.5.0"
+cardview = "1.0.0"
+
+
+[libraries]
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockito" }
+mockito-inline = { module = "org.mockito:mockito-inline", version.ref = "mockito" }
+robolectric = { module = "org.robolectric:robolectric", version.ref = "robolectric" }
+blurview = { module = "com.github.Dimezis:BlurView", version = "version-1.6.6" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
+porcupine-android = { group = "ai.picovoice", name = "porcupine-android", version.ref = "porcupine" }
+glide          = { module = "com.github.bumptech.glide:glide",    version.ref = "glide" }
+glideCompiler  = { module = "com.github.bumptech.glide:compiler", version.ref = "glide" }
+core = { group = "androidx.test", name = "core", version.ref = "core" }
+cardview = { group = "androidx.cardview", name = "cardview", version.ref = "cardview" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+
+[bundles]
+test = ["mockito-core", "mockito-inline", "robolectric"]

@@ -1,0 +1,32 @@
+*.iml
+.gradle
+/local.properties
+/.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Environment variables
+.env
+
+# Test and build outputs
+test-output.txt
+*.apk
+*.aab
+*.ap_
+
+# Sensitive files
+notes.txt
+
+# Keystore files
+*.jks
+*.keystore
+
+# Log and backup files
+*.log
+*.orig
+
+
