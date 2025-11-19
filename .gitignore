@@ -29,4 +29,9 @@ notes.txt
 *.log
 *.orig
 
+# Media assets
+app/src/main/res/raw/
+app/src/main/res/drawable/*.gif
+app/src/main/res/drawable/*.png
+
 
