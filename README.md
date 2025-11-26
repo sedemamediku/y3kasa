@@ -1,8 +1,14 @@
+
+
 # Kasa (Yɛkasa) Voice Assistant
 
 Kasa is an Android voice assistant tailored for disabled twi-speaking users. It provides wake-word detection, Twi speech recognition, English translation, intent classification, and contextual actions including phone calls, SMS, app launches, and live news briefings. The application features both a playful mascot interface and traditional controls.
 
 ---
+
+[![Watch the video](https://img.youtube.com/vi/hICpUb58jSI/maxresdefault.jpg)](https://youtu.be/hICpUb58jSI)
+
+### [Watch the demo on YouTube](https://youtu.be/hICpUb58jSI)
 
 ## Feature Highlights
 
